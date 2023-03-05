@@ -39,7 +39,7 @@ podTemplate(yaml: '''
 ''') {
   node(POD_LABEL) {
     stage('Build a gradle project') {
-      git 'https://github.com/cassandrareed26/umlS23/week5.git'
+      git 'https://github.com/cassandrareed26/week7.git'
       container('gradle') {
         stage('Build a gradle project') {
           sh '''
